@@ -1,5 +1,4 @@
 package Year2018;
-import src.lib.Helpers;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -40,7 +39,7 @@ public class Day1 {
             long sum = 0, numberRead;
             ArrayList<Long> numberSequence = new ArrayList<>(), sumArray = new ArrayList<>();
 
-            Helpers H = new Helpers();
+            lib.Helpers H = new lib.Helpers();
             boolean found = false;
 
             while ((line = br.readLine()) != null) {

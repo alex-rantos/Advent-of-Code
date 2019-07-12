@@ -1,14 +1,11 @@
 package Year2018;
 
-import src.lib.Helpers;
+import lib.Helpers;
 import java.io.*;
 import java.util.ArrayList;
 
 public class Day2 {
     public void solution2_1(){
-        // We need to provide file path as the parameter:
-        // double backquote is to avoid compiler interpret words
-        // like \test as \t (ie. as a escape sequence)
         try {
             File file = new File("src/Year2018/input2.txt");
 
@@ -60,9 +57,6 @@ public class Day2 {
     }
 
     public void solution2_2(){
-        // We need to provide file path as the parameter:
-        // double backquote is to avoid compiler interpret words
-        // like \test as \t (ie. as a escape sequence)
         try {
             File file = new File("src/Year2018/input2.txt");
 
@@ -70,6 +64,8 @@ public class Day2 {
 
             String line;
             ArrayList<String> linesArr = new ArrayList<>();
+
+            Helpers helpers = new Helpers();
 
             while ((line = br.readLine()) != null) {
                 for (String s: linesArr) {
@@ -82,7 +78,7 @@ public class Day2 {
                             if (charDiff >= 2) break;
                         }
                     }
-                    if (charDiff == 1) System.out.println("Requested character sequence : "+charRemoveAt(s, index));
+                    if (charDiff == 1) System.out.println("Requested character sequence : "+helpers.charRemoveAt(s, index));
                 }
                 linesArr.add(line);
             }
@@ -95,7 +91,4 @@ public class Day2 {
 
     }
 
-    public static String charRemoveAt(String str, int p) {
-        return str.substring(0, p) + str.substring(p + 1);
-    }
 }

@@ -26,7 +26,7 @@ public class Day3 {
             while ((line = br.readLine()) != null) {
                 Pattern p = Pattern.compile("(\\d+)");
                 Matcher m = p.matcher(line);
-                m.find(); // skip number of fabric
+                m.find();
                 int id = Integer.valueOf(m.group());
                 m.find();
                 int x = Integer.valueOf(m.group());
