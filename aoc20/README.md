@@ -2,7 +2,7 @@
 
 ## Compilation
 
-```tsc ./src/Day*.ts | node ./src/Day*.js``` Both files are provided in this repo.
+`tsc ./src/Day*.ts | node ./src/Day*.js` Both files are provided in this repo.
 
 ### Day 1
 
@@ -16,6 +16,4 @@ Find three numbers in an array that sums to a target number. We iterate the arra
 
 ### Day 2
 
-#### Part 2.1
-
-#### Part 2.2
+Extract with regex the information from the input. Validate input according to spec.
