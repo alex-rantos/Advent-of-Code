@@ -1,6 +1,8 @@
-# Advent of Code Puzzle Solutions in Typescript
+# Advent of Code 2020 Puzzle Solutions in Typescript
 
-## Year 2020
+## Compilation
+
+```tsc ./src/Day*.ts | node ./src/Day*.js``` Both files are provided in this repo.
 
 ### Day 1
 
